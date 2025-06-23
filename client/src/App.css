@@ -1,0 +1,35 @@
+body {
+  background-color: #f8f9fa;
+}
+video,
+canvas {
+  border-radius: 12px;
+}
+.bg-custom {
+  background-image: url("");
+  background-color: red !important;
+  background-size: cover; /* Adjusts how the image is scaled */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repetition */
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.image-card {
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
